@@ -32,6 +32,13 @@ public:
         return product; 
     }; 
 
+    void reverseThis(){ 
+        reverse(vect.begin(), vect.end()); 
+         for (int i = 0; i < vect.size(); ++i) { 
+            cout << vect.at(i) << " ";
+        } 
+    };
+
 }; 
 
 int main(){ 
