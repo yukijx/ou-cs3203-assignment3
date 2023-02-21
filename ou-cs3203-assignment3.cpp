@@ -18,4 +18,13 @@ public:
         return sum; 
     } ;
 
+     int product() { 
+        int product = 1;
+
+        for (int i = 0; i < vect.size(); ++i) { 
+            product = product * vect.at(i); 
+        }
+        return product; 
+    }; 
+
 }; 
