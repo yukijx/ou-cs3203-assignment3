@@ -23,7 +23,7 @@ public:
         return sum; 
     } ;
 
-     int product() { 
+    int product() { 
         int product = 1;
 
         for (int i = 0; i < vect.size(); ++i) { 
@@ -31,6 +31,13 @@ public:
         }
         return product; 
     }; 
+
+    void reverseThis(){ 
+        reverse(vect.begin(), vect.end()); 
+         for (int i = 0; i < vect.size(); ++i) { 
+            cout << vect.at(i) << " ";
+        } 
+    };
 
 }; 
 
@@ -47,4 +54,10 @@ int main(){
 
         cout << "The total sum of all values is " << vector.add() << "." << endl;
         cout << "The product of all the values is " << vector.product() << "." << endl; 
+
+        cout << "The reversed list is "; 
+        vector.reverseThis(); 
+
+        return 0; 
+
 } 
